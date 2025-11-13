@@ -1,6 +1,7 @@
 import React from 'react'
 import Spline from '@splinetool/react-spline'
 import { Megaphone, Search, PenTool, Bot, BadgeCheck, Share2, Users } from 'lucide-react'
+import ThreeDSection from './components/ThreeDSection.jsx'
 
 const services = [
   { title: 'Digital Marketing', icon: Megaphone, desc: 'Performance-focused campaigns that convert.' },
@@ -32,7 +33,7 @@ export default function App() {
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm text-white/80">
             <a href="#services" className="hover:text-white">Services</a>
-            <a href="#work" className="hover:text-white">Work</a>
+            <a href="#showcase" className="hover:text-white">3D</a>
             <a href="#contact" className="hover:text-white">Contact</a>
             <a href="#contact" className="ml-2 inline-flex items-center rounded-full bg-white text-slate-900 px-4 py-2 font-medium hover:bg-white/90">Get a Proposal</a>
           </nav>
@@ -105,6 +106,9 @@ export default function App() {
           </div>
         </div>
       </section>
+
+      {/* Additional 3D Section */}
+      <ThreeDSection id="showcase" title="Immersive 3D Brand Aura" subtitle="Showcase your tech-forward identity with a second interactive 3D scene." scene="https://prod.spline.design/4cHQr84zOGAHOehh/scene.splinecode" />
 
       {/* Footer */}
       <footer id="contact" className="relative z-20 border-t border-white/10">
